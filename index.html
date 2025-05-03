@@ -15,7 +15,7 @@
     .product-grid, .gallery, .brand-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 10px; }
     .product, .gallery img, .brand { border: 1px solid #ccc; border-radius: 8px; padding: 10px; background: white; }
     .gallery img { width: 100%; height: auto; }
-    .brand img { width: 100px; height: auto; margin: 0 auto; display: block; }
+    .brand img { width: 100px; height: auto; margin: 0 auto; display: block; object-fit: contain; }
 
     form { display: flex; flex-direction: column; max-width: 400px; margin: auto; gap: 10px; }
     input, textarea { padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
@@ -32,27 +32,6 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-    }
-
-    .review-section {
-      margin-top: 30px;
-    }
-
-    .review {
-      background-color: #f9f9f9;
-      padding: 15px;
-      border-radius: 5px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-    }
-
-    .review a {
-      color: #ff6f00;
-      text-decoration: none;
-    }
-
-    .review a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -92,7 +71,10 @@
   <section id="brands">
     <h2>Brands We Sell</h2>
     <div class="brand-grid">
-      <div class="brand"><img src="https://via.placeholder.com/100x100?text=Doms" alt="Doms" /><p>Doms</p></div>
+      <div class="brand"><img src="https://domsindia.com/wp-content/uploads/2023/08/DOMSrgbWebsite.png" alt="Doms" /><p>Doms</p></div>
+      <div class="brand"><img src="https://anupam.com/cdn/shop/files/Anupam_Logo.png?v=1717401976&width=300" alt="Anupam" /><p>Anupam</p></div>
+      <div class="brand"><img src="https://www.montmarte.com/cdn/shop/files/MM-Horizontal-Logo-black_2160x.png?v=1662958586" alt="Mont Marte" /><p>Mont Marte</p></div>
+      <div class="brand"><img src="https://www.faber-castell.com/-/media/Faber-Castell-new/Logo-FC-SVG.ashx?mh=61&la=en-Glob&h=61&w=185&mw=194&hash=D8FD8526EB4A1C0271E186138AAE553B" alt="Faber Castell" /><p>Faber Castell</p></div>
       <div class="brand"><img src="https://via.placeholder.com/100x100?text=Camlin" alt="Camlin" /><p>Camlin</p></div>
       <div class="brand"><img src="https://via.placeholder.com/100x100?text=Fevicryl" alt="Fevicryl" /><p>Fevicryl</p></div>
       <div class="brand"><img src="https://via.placeholder.com/100x100?text=Canson" alt="Canson" /><p>Canson</p></div>
@@ -102,10 +84,6 @@
       <div class="brand"><img src="https://via.placeholder.com/100x100?text=Tombow" alt="Tombow" /><p>Tombow</p></div>
       <div class="brand"><img src="https://via.placeholder.com/100x100?text=Prismacolor" alt="Prismacolor" /><p>Prismacolor</p></div>
       <div class="brand"><img src="https://via.placeholder.com/100x100?text=Steadtler" alt="Steadtler" /><p>Steadtler</p></div>
-      <div class="brand"><img src="https://via.placeholder.com/100x100?text=FaberCastell" alt="Faber Castell" /><p>Faber Castell</p></div>
-      <div class="brand"><img src="https://via.placeholder.com/100x100?text=Arto" alt="Arto" /><p>Arto</p></div>
-      <div class="brand"><img src="https://via.placeholder.com/100x100?text=MontMarte" alt="Mont Marte" /><p>Mont Marte</p></div>
-      <div class="brand"><img src="https://via.placeholder.com/100x100?text=Anupam" alt="Anupam" /><p>Anupam</p></div>
     </div>
   </section>
 
@@ -144,26 +122,13 @@
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
-    <p>📢 Leave us a review: <a href="https://g.page/r/CfzQ1DOkbcRjEAE/review" target="_blank">Review Us</a></p>
-  </section>
-
-  <section class="review-section">
-    <h2>What Our Customers Say</h2>
-    <div class="review">
-      <p>⭐⭐⭐⭐⭐ "Amazing art supplies! Great collection and quality. Highly recommend!" – <a href="https://g.page/r/CfzQ1DOkbcRjEAE/review" target="_blank">Read More</a></p>
-    </div>
-    <div class="review">
-      <p>⭐⭐⭐⭐⭐ "Perfect for artists! The best store in Karnal for all art materials." – <a href="https://g.page/r/CfzQ1DOkbcRjEAE/review" target="_blank">Read More</a></p>
-    </div>
+    <p>📢 Leave us a review: <a href="https://g.page/Swastik-Stationer-Karnal/review" target="_blank">Leave a review on Google!</a></p>
   </section>
 
 </div>
 
 <footer>
-  <p>&copy; 2025 Swastik Stationer's | All rights reserved</p>
-  <p>
-    <a href="https://www.instagram.com/swastik_stationers_/" style="color: white; text-decoration: underline;" target="_blank">Instagram</a>
-  </p>
+  <p>&copy; 2025 Swastik Stationer's. All rights reserved.</p>
 </footer>
 
 </body>
