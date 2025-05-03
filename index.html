@@ -4,36 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Swastik Stationer's - A Fine Art & Craft Store</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #fff8f0; color: #333; }
-    header { background: #b35c1e; color: white; padding: 20px; text-align: center; }
-    nav { background: #e0a96d; padding: 10px; text-align: center; }
-    nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
-    .content { padding: 20px; }
-    footer { background: #b35c1e; color: white; text-align: center; padding: 10px; }
-
-    .product-grid, .gallery, .brand-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 10px; }
-    .product, .gallery img, .brand { border: 1px solid #ccc; border-radius: 8px; padding: 10px; background: white; }
-    .gallery img { width: 100%; height: auto; }
-    .brand img { width: 100px; height: auto; margin: 0 auto; display: block; object-fit: contain; }
-
-    form { display: flex; flex-direction: column; max-width: 400px; margin: auto; gap: 10px; }
-    input, textarea { padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
-    button { padding: 10px; background: #b35c1e; color: white; border: none; border-radius: 5px; cursor: pointer; }
-    button:hover { background: #a04e18; }
-
-    .online-button {
-      display: block;
-      text-align: center;
-      margin: 20px auto;
-      background: #ff6f00;
-      color: white;
-      padding: 15px 25px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -49,15 +20,18 @@
   <a href="#gallery">Gallery</a>
   <a href="#order">Order Online</a>
   <a href="#contact">Contact</a>
+  <a href="#reviews">Reviews</a>
 </nav>
 
 <div class="content">
 
+  <!-- About Section -->
   <section id="about">
     <h2>About Us</h2>
     <p>Swastik Stationer's is a one-stop shop for creative pursuits in Karnal, India. We offer a vibrant collection of fine art supplies, digital printing services, and crafting materials, catering to both artists and hobbyists. Whether you're a professional artist or a DIY enthusiast, we have everything you need at the best prices.</p>
   </section>
 
+  <!-- Products Section -->
   <section id="products">
     <h2>Product Categories</h2>
     <div class="product-grid">
@@ -68,61 +42,33 @@
     </div>
   </section>
 
-  <section id="brands">
-    <h2>Brands We Sell</h2>
-    <div class="brand-grid">
-      <div class="brand"><img src="https://domsindia.com/wp-content/uploads/2023/08/DOMSrgbWebsite.png" alt="Doms" /><p>Doms</p></div>
-      <div class="brand"><img src="https://anupam.com/cdn/shop/files/Anupam_Logo.png?v=1717401976&width=300" alt="Anupam" /><p>Anupam</p></div>
-      <div class="brand"><img src="https://www.montmarte.com/cdn/shop/files/MM-Horizontal-Logo-black_2160x.png?v=1662958586" alt="Mont Marte" /><p>Mont Marte</p></div>
-      <div class="brand"><img src="https://www.faber-castell.com/-/media/Faber-Castell-new/Logo-FC-SVG.ashx?mh=61&la=en-Glob&h=61&w=185&mw=194&hash=D8FD8526EB4A1C0271E186138AAE553B" alt="Faber Castell" /><p>Faber Castell</p></div>
-      <div class="brand"><img src="https://via.placeholder.com/100x100?text=Camlin" alt="Camlin" /><p>Camlin</p></div>
-      <div class="brand"><img src="https://via.placeholder.com/100x100?text=Fevicryl" alt="Fevicryl" /><p>Fevicryl</p></div>
-      <div class="brand"><img src="https://via.placeholder.com/100x100?text=Canson" alt="Canson" /><p>Canson</p></div>
-      <div class="brand"><img src="https://via.placeholder.com/100x100?text=Brustro" alt="Brustro" /><p>Brustro</p></div>
-      <div class="brand"><img src="https://via.placeholder.com/100x100?text=Artline" alt="Artline" /><p>Artline</p></div>
-      <div class="brand"><img src="https://via.placeholder.com/100x100?text=Sakura" alt="Sakura" /><p>Sakura</p></div>
-      <div class="brand"><img src="https://via.placeholder.com/100x100?text=Tombow" alt="Tombow" /><p>Tombow</p></div>
-      <div class="brand"><img src="https://via.placeholder.com/100x100?text=Prismacolor" alt="Prismacolor" /><p>Prismacolor</p></div>
-      <div class="brand"><img src="https://via.placeholder.com/100x100?text=Steadtler" alt="Steadtler" /><p>Steadtler</p></div>
+  <!-- Reviews Section -->
+  <section id="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="reviews-container">
+      <div class="review">
+        <h3>John Doe</h3>
+        <p>"I absolutely love shopping at Swastik Stationer's! The variety of products is amazing, and the customer service is outstanding. Highly recommend!"</p>
+      </div>
+      <div class="review">
+        <h3>Jane Smith</h3>
+        <p>"I found everything I needed for my art project here. The quality of supplies is top-notch, and the prices are reasonable."</p>
+      </div>
+      <div class="review">
+        <h3>Mike Johnson</h3>
+        <p>"Swastik Stationer's is my go-to store for all my crafting supplies. The team is always helpful, and the store is well-organized."</p>
+      </div>
+      <div class="review">
+        <h3>Sarah Lee</h3>
+        <p>"I love the wide range of brands they carry, and the store always has the latest products. My new favorite art store!"</p>
+      </div>
     </div>
   </section>
 
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/300x200?text=Store+Front" alt="Store Front" />
-      <img src="https://via.placeholder.com/300x200?text=Craft+Supplies" alt="Craft Supplies" />
-      <img src="https://via.placeholder.com/300x200?text=Art+Section" alt="Art Supplies" />
-    </div>
-  </section>
-
-  <section id="order">
-    <h2>Order Online</h2>
-    <p>Now order your favorite craft and art supplies directly from our Swiggy Mini Store!</p>
-    <a class="online-button" href="https://www.swiggy.com/" target="_blank">Visit Our Swiggy Mini Store</a>
-  </section>
-
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Us</h2>
     <p>📍 Swastik Stationer's, Shop-18, Railway Rd, near Jain Girls School, Shakti Colony, Karnal, Haryana 132001<br>📞 +91-98963 57572<br>📧 vipinjain69@gmail.com </p>
-
-    <h3>Send Us a Message</h3>
-    <form action="https://formspree.io/f/xeogapzj" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
-    <h3>Find Us on the Map</h3>
-    <div style="margin-top: 15px;">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.0916504233296!2d76.9864502!3d29.6881224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e702297e528c9%3A0x63c46da433d4d0fc!2sSwastik%20Stationer&#39;s%3A%20A%20Craft%20Store!5e0!3m2!1sen!2sin!4v1746290826907!5m2!1sen!2sin" 
-        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-    <p>📢 Leave us a review: <a href="https://g.page/Swastik-Stationer-Karnal/review" target="_blank">Leave a review on Google!</a></p>
   </section>
 
 </div>
